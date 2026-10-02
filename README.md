@@ -77,6 +77,8 @@ A hands-on lab configuring SAML 2.0 single sign-on between Okta (Identity Provid
 ### Step 8: Test (IdP-Initiated SSO)
 - Opened a private browser window (to avoid existing admin sessions).
 
+<img width="1701" height="848" alt="Image 10-1-26 at 21 09" src="https://github.com/user-attachments/assets/c7bf582b-f4f1-4275-a85c-59df86c831b5" />
+
 - ## Troubleshooting: "Single Sign-On Error"
 
 The first test failed with Salesforce's generic **"We can't log you in because of an issue with single sign-on."**
@@ -97,5 +99,3 @@ curl -s https://<okta-domain>/app/<app-id>/sso/saml/metadata | grep -o 'entityID
 - Signed in to the Okta dashboard as OktaUser3 and approved the Okta Verify MFA prompt.
 - Clicked the Salesforce.com tile.
 - Landed in Salesforce as OktaUser with no Salesforce password prompt.
-
-<img width="1701" height="848" alt="Image 10-1-26 at 21 09" src="https://github.com/user-attachments/assets/c7bf582b-f4f1-4275-a85c-59df86c831b5" />
